@@ -1,15 +1,11 @@
-body {
-    
-}
-
-
-
-.navbar {
-    background-color: lavender;
+.navbar-light {
+    background-color: lavender!important;
     color: white !important;
     text-shadow: 1px 1px 2px black;
 }
-
+.bg-light {
+    background-color: lavender;
+}
 .btn-primary {
     background-color: lavender;
     border: none;
