@@ -5,7 +5,6 @@ route.get("/notes", (req, res) => {
   res.sendFile(path.join(__dirname, "../public/notes.html"));
 });
 
-// All other routes respond with the index.html file
 route.get("*", (req, res) => {
   res.sendFile(path.join(__dirname, "../public/index.html"));
 });
