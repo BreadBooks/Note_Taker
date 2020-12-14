@@ -1,6 +1,7 @@
 const util = require("util");
 const fs = require("fs");
-const uuidv1 = require("uuid/v1");
+
+const uuidv1 = require("uuid");
 
 const readFileAsync = util.promisify(fs.readFile);
 const writeFileAsync = util.promisify(fs.writeFile);
@@ -14,16 +15,18 @@ class Store {
     return writeFileAsync("db/db.json", JSON.stringify(note));
   }
 
-  retrieveNotes() {
+  getNotes() {
     return this.read().then((notes) => {
-      let parseNotes;
+      let parsedNotes;
+
+
       try {
-        parseNotes = [].concat(JSON.parse(notes));
+        parsedNotes = [].concat(JSON.parse(notes));
       } catch (err) {
-        parseNotes = [];
+        parsedNotes = [];
       }
 
-      return parseNotes;
+      return parsedNotes;
     });
   }
 
@@ -34,16 +37,19 @@ class Store {
       throw new Error("Note 'title' and 'text' cannot be blank");
     }
 
+
     const newNote = { title, text, id: uuidv1() };
 
-    return this.retrieveNotes()
+
+    return this.getNotes()
       .then((notes) => [...notes, newNote])
       .then((updatedNotes) => this.write(updatedNotes))
       .then(() => newNote);
   }
 
-  deleteNote(id) {
-    return this.retrieveNotes()
+  removeNote(id) {
+
+    return this.getNotes()
       .then((notes) => notes.filter((note) => note.id !== id))
       .then((filteredNotes) => this.write(filteredNotes));
   }
