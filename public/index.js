@@ -1,6 +1,6 @@
 const $noteTitle = $(".note-title");
 const $noteText = $(".note-textarea");
-const $saveNoteBtn = $(".save-note");
+const $saveNoteBtn = $(".save-notes");
 const $newNoteBtn = $(".new-note");
 const $noteList = $(".list-container .list-group");
 
@@ -31,7 +31,6 @@ const deleteNote = (id) => {
 };
 
 const renderActiveNote = () => {
-  $saveNoteBtn.hide();
 
   if (activeNote.id) {
     $noteTitle.attr("readonly", true);
