@@ -1,3 +1,4 @@
+// server stuff
 const express = require("express");
 const app = express();
 

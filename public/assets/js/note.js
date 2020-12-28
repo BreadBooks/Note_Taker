@@ -6,7 +6,7 @@ const $noteList = $(".list-container .list-group");
 
 let activeNote = {};
 
-
+// Use GET, POST, & DELETE requests
 const getNotes = () => {
   return $.ajax({
     url: "/api/notes",
