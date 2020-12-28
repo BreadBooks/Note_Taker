@@ -2,8 +2,8 @@
 
 ## Description
 A functional note taking app that allows the user to write, save, and edit notes to better plan their days. 
-![Preview1](/assets/images/Preview1.png)
-![Preview2](/assets/images/Preview2.png)
+![Preview1](public\assets\images\Preview1.png)
+![Preview2]((public\assets\images\Preview2.png)
 ## Table of Contents
 * [Title](#title)
 * [Description](#description)
