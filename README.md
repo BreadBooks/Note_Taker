@@ -1,9 +1,12 @@
 # NoteTaker
 
 ## Description
-A functional note taking app that allows the user to write, save, and edit notes to better plan their days. 
+ A functional note taking app that allows the user to write, save, and edit notes to better plan their days. Use this app through the deployed Heroku application [here.](https://breadbooks-note-taker.herokuapp.com/)
 ![Preview1](/public/assets/images/Preview1.png)
 ![Preview2](/public/assets/images/Preview2.png)
+
+Need to add To-Do notes? Use the Daily Planner application [here!](https://breadbooks.github.io/DailyPlanner/)
+
 ## Table of Contents
 * [Title](#title)
 * [Description](#description)
