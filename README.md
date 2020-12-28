@@ -1,8 +1,9 @@
 # NoteTaker
 
 ## Description
-
-
+A functional note taking app that allows the user to write, save, and edit notes to better plan their days. 
+![Preview1](/assets/images/Preview1.png)
+![Preview2](/assets/images/Preview2.png)
 ## Table of Contents
 * [Title](#title)
 * [Description](#description)
@@ -15,7 +16,7 @@
 
 
 ### How to Deploy Application
-By using the deployed web application at https://breadbooks.github.io/NoteTaker/
+By using the deployed web application at https://breadbooks-note-taker.herokuapp.com/
 
 
 
@@ -25,7 +26,7 @@ Emailing me at BreadBooks99@gmail.com
 
 ### Licensing
 
-[MIT](https://choosealicense.com/licenses/mit).
+[MIT](https://choosealicense.com/licenses/MIT).
 
 ### Questions/Contact Me
 View my GitHub portfolio [Here](https://github.com/BreadBooks)
